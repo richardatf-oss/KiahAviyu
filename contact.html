@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kiah Aviyu</title>
+  <meta name="description" content="Contact Kiah Aviyu." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="brand-mark">א</div>
+        <div class="brand-text">
+          <div class="brand-title">Kiah Aviyu</div>
+          <div class="brand-subtitle">Contact</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="books.html">Books</a>
+        <a class="nav-link" href="series.html">Series</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h1>Contact</h1>
+        <p class="muted">Reader notes, collaboration, publishing inquiries—welcome.</p>
+      </div>
+
+      <div class="grid-2 mt-md">
+        <div class="tile">
+          <h2>Email</h2>
+          <p class="muted">Fastest way to reach me:</p>
+          <p>
+            <a class="text-link" href="mailto:kiahaviyu@proton.me">kiahaviyu@proton.me</a>
+          </p>
+          <p class="muted">If you don’t hear back quickly, feel free to resend—life gets loud sometimes.</p>
+        </div>
+
+        <div class="tile">
+          <h2>Send a message</h2>
+          <p class="muted">This form is powered by Netlify (no account required for visitors).</p>
+
+          <!-- Netlify Form -->
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <!-- Required hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="contact" />
+
+            <!-- Honeypot field (hidden by CSS/attribute) -->
+            <p style="display:none;">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required class="form-input" />
+            </div>
+
+            <div class="form-row">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required class="form-input" />
+            </div>
+
+            <div class="form-row">
+              <label for="subject" class="form-label">Subject</label>
+              <input id="subject" name="subject" type="text" required class="form-input" />
+            </div>
+
+            <div class="form-row">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="6" required class="form-input"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn small primary" type="submit">Send</button>
+              <button class="btn small" type="reset">Clear</button>
+            </div>
+
+            <p class="muted" style="margin-top:10px;">
+              (After deploy, submissions will appear in your Netlify dashboard under <em>Forms</em>.)
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="note mt-lg">
+        <p><strong>Netlify note:</strong> The form will start working only after it’s deployed on Netlify and Netlify detects it on a build.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="series.html">Series</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-small muted"><span id="year"></span></div>
+    </div>
+    <script src="js/site.js"></script>
+  </footer>
+</body>
+</html>
