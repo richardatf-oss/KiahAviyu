@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Books — Kiah Aviyu</title>
-  <meta name="description" content="Books by Kiah Aviyu — direct Amazon links, grouped by theme and series." />
+  <meta name="description" content="Books by Kiah Aviyu — direct Amazon links, organized by category and series." />
   <link rel="stylesheet" href="/css/styles.css?v=3" />
 </head>
 <body>
@@ -35,23 +35,35 @@
       <div class="wrap">
         <div class="section-head">
           <h1 class="page-title">Books</h1>
-          <p class="muted">A calm catalog. Direct links. Grouped naturally.</p>
+          <p class="muted">
+            Direct Amazon links. Covers appear automatically when you add a cover path in
+            <code>/data/books.json</code>.
+          </p>
         </div>
 
-        <div class="filters">
-          <button class="pill active" data-filter="all">All</button>
-          <button class="pill" data-filter="Fiction & Myth">Fiction & Myth</button>
-          <button class="pill" data-filter="Mystical Nonfiction">Mystical Nonfiction</button>
-          <button class="pill" data-filter="Prayers & Devotional Works">Devotional</button>
+        <div class="filters" aria-label="Book filters">
+          <button class="pill active" type="button" data-filter="all">All</button>
+          <button class="pill" type="button" data-filter="Fiction &amp; Myth">Fiction &amp; Myth</button>
+          <button class="pill" type="button" data-filter="Mystical Nonfiction">Mystical Nonfiction</button>
+          <button class="pill" type="button" data-filter="Sefirot Volumes">Sefirot Volumes</button>
+          <button class="pill" type="button" data-filter="Prayers &amp; Devotional Works">Prayers &amp; Devotional Works</button>
         </div>
 
         <div id="books-grid" class="book-grid" aria-live="polite"></div>
 
         <div class="card subtle" style="margin-top:16px;">
-          <div class="card-label">Tip</div>
+          <div class="card-label">How to add covers</div>
           <p class="card-text" style="margin:0;">
-            To add or edit books, update <code>/data/books.json</code>.
-            If you have a cover image URL, paste it into the <code>cover</code> field.
+            Put cover images in <code>/assets/covers/</code> and set each book’s <code>cover</code>
+            to something like: <code>/assets/covers/tower-of-daat.jpg</code>
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="card-label">Next step</div>
+          <p class="card-text" style="margin:0;">
+            Paste your remaining Amazon links and I’ll normalize them to clean
+            <code>/dp/ASIN</code> format and group them into the right series.
           </p>
         </div>
       </div>
@@ -69,6 +81,7 @@
         <a href="/series.html">Series</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
+        <a href="/books.html">Books</a>
       </div>
       <div class="footer-small muted">
         <span id="year"></span> • Built with care.
