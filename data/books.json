@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "title": "The Tower of Da’at",
+      "category": "Fiction & Myth",
+      "series": "The Celestial Library of the 231 Gates",
+      "blurb": "A gate of Da’at—structure, ascent, and the hidden join between worlds.",
+      "amazon_url": "https://www.amazon.com/dp/1969659106",
+      "format_label": "Paperback",
+      "cover": ""
+    },
+    {
+      "title": "Tiferet",
+      "category": "Mystical Nonfiction",
+      "series": "Sefirot Volumes",
+      "blurb": "Beauty as balance—centerline harmony, compassion, and radiance.",
+      "amazon_url": "https://www.amazon.com/dp/1969659408",
+      "format_label": "Paperback",
+      "cover": ""
+    },
+    {
+      "title": "The Adversary’s Prayer",
+      "category": "Prayers & Devotional Works",
+      "series": "Devotional Works",
+      "blurb": "Thanking HaShem while the adversary tries—steadfastness in the fire.",
+      "amazon_url": "https://www.amazon.com/dp/B0G96BGXFF",
+      "format_label": "Kindle",
+      "cover": ""
+    },
+    {
+      "title": "Quantum Etz Chaim",
+      "category": "Mystical Nonfiction",
+      "series": "Quantum Etz Chaim (Project World)",
+      "blurb": "Torah and the quantum world in one living framework—Sefirot as structure.",
+      "amazon_url": "https://www.amazon.com/s?k=Quantum+Etz+Chaim",
+      "format_label": "Amazon",
+      "cover": ""
+    }
+  ]
+}
