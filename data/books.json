@@ -7,25 +7,7 @@
       "blurb": "A gate of Da’at—structure, ascent, and the hidden join between worlds.",
       "amazon_url": "https://www.amazon.com/dp/1969659106",
       "format_label": "Paperback",
-      "cover": ""
-    },
-    {
-      "title": "Tiferet",
-      "category": "Mystical Nonfiction",
-      "series": "Sefirot Volumes",
-      "blurb": "Beauty as balance—centerline harmony, compassion, and radiance.",
-      "amazon_url": "https://www.amazon.com/dp/1969659408",
-      "format_label": "Paperback",
-      "cover": ""
-    },
-    {
-      "title": "The Adversary’s Prayer",
-      "category": "Prayers & Devotional Works",
-      "series": "Devotional Works",
-      "blurb": "Thanking HaShem while the adversary tries—steadfastness in the fire.",
-      "amazon_url": "https://www.amazon.com/dp/B0G96BGXFF",
-      "format_label": "Kindle",
-      "cover": ""
+      "cover": "/assets/covers/tower-of-daat.jpg"
     },
     {
       "title": "Quantum Etz Chaim",
@@ -34,7 +16,25 @@
       "blurb": "Torah and the quantum world in one living framework—Sefirot as structure.",
       "amazon_url": "https://www.amazon.com/s?k=Quantum+Etz+Chaim",
       "format_label": "Amazon",
-      "cover": ""
+      "cover": "/assets/covers/quantum-etz-chaim.jpg"
+    },
+    {
+      "title": "Tiferet",
+      "category": "Sefirot Volumes",
+      "series": "Sefirot Volumes",
+      "blurb": "Beauty as balance—centerline harmony, compassion, and radiance.",
+      "amazon_url": "https://www.amazon.com/dp/1969659408",
+      "format_label": "Paperback",
+      "cover": "/assets/covers/tiferet.jpg"
+    },
+    {
+      "title": "The Adversary’s Prayer",
+      "category": "Prayers & Devotional Works",
+      "series": "Devotional Works",
+      "blurb": "Thanking HaShem while the adversary tries—steadfastness in the fire.",
+      "amazon_url": "https://www.amazon.com/dp/B0G96BGXFF",
+      "format_label": "Kindle",
+      "cover": "/assets/covers/adversarys-prayer.jpg"
     }
   ]
 }
