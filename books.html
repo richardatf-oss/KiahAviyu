@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Books — Kiah Aviyu</title>
-  <meta name="description" content="Books by Kiah Aviyu — a living catalog." />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <meta name="description" content="Books by Kiah Aviyu — direct Amazon links, grouped by theme and series." />
+  <link rel="stylesheet" href="/css/styles.css?v=3" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,66 +30,52 @@
     </div>
   </header>
 
-  <main id="main" class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <h1>Books</h1>
-        <p class="muted">Direct Amazon links. We’ll expand this into a full catalog as you paste more links.</p>
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h1 class="page-title">Books</h1>
+          <p class="muted">A calm catalog. Direct links. Grouped naturally.</p>
+        </div>
+
+        <div class="filters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="Fiction & Myth">Fiction & Myth</button>
+          <button class="pill" data-filter="Mystical Nonfiction">Mystical Nonfiction</button>
+          <button class="pill" data-filter="Prayers & Devotional Works">Devotional</button>
+        </div>
+
+        <div id="books-grid" class="book-grid" aria-live="polite"></div>
+
+        <div class="card subtle" style="margin-top:16px;">
+          <div class="card-label">Tip</div>
+          <p class="card-text" style="margin:0;">
+            To add or edit books, update <code>/data/books.json</code>.
+            If you have a cover image URL, paste it into the <code>cover</code> field.
+          </p>
+        </div>
       </div>
-
-      <h2 class="mt-md">Available now</h2>
-
-      <div class="book-grid">
-        <article class="book">
-          <h3>The Tower of Da’at</h3>
-          <p class="muted">A gate of Da’at—structure, ascent, and the hidden join between worlds.</p>
-          <div class="book-actions">
-            <a class="btn small primary" href="https://www.amazon.com/dp/1969659106" target="_blank" rel="noopener">Amazon</a>
-          </div>
-        </article>
-
-        <article class="book">
-          <h3>Quantum Etz Chaim</h3>
-          <p class="muted">Torah and the quantum world in one living framework—Sefirot as structure.</p>
-          <div class="book-actions">
-            <a class="btn small primary" href="https://www.amazon.com/dp/1969659254" target="_blank" rel="noopener">Amazon</a>
-          </div>
-        </article>
-
-        <article class="book">
-          <h3>Tiferet</h3>
-          <p class="muted">Beauty as balance—centerline harmony, compassion, and radiance.</p>
-          <div class="book-actions">
-            <a class="btn small primary" href="https://www.amazon.com/dp/1969659408" target="_blank" rel="noopener">Amazon</a>
-          </div>
-        </article>
-
-        <article class="book">
-          <h3>The Adversary’s Prayer</h3>
-          <p class="muted">Thanking HaShem while the adversary tries—steadfastness in the fire.</p>
-          <div class="book-actions">
-            <a class="btn small primary" href="https://www.amazon.com/dp/B0G96BGXFF" target="_blank" rel="noopener">Amazon (Kindle)</a>
-          </div>
-        </article>
-      </div>
-
-      <div class="note mt-lg">
-        <p><strong>Next step:</strong> paste the rest of your Amazon book links and I’ll clean them to /dp/ASIN and group them by series.</p>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
+      <div>
+        <div class="footer-title">Kiah Aviyu</div>
+        <p class="muted">Books • Gates • Trees • Light</p>
+      </div>
       <div class="footer-links">
         <a href="/index.html">Home</a>
         <a href="/series.html">Series</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <div class="footer-small muted"><span id="year"></span></div>
+      <div class="footer-small muted">
+        <span id="year"></span> • Built with care.
+      </div>
     </div>
-    <script src="/js/site.js"></script>
+    <script src="/js/site.js?v=3"></script>
+    <script src="/js/books.js?v=3"></script>
   </footer>
 </body>
 </html>
