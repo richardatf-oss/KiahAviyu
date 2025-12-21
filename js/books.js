@@ -1,7 +1,6 @@
 (async () => {
   const grid = document.getElementById("books-grid");
   const pills = Array.from(document.querySelectorAll(".pill"));
-
   if (!grid) return;
 
   let data;
@@ -15,14 +14,6 @@
 
   const books = Array.isArray(data?.books) ? data.books : [];
 
-  function coverHtml(book) {
-    // If cover URL provided, show image; otherwise show a restrained placeholder.
-    if (book.cover && typeof book.cover === "string" && book.cover.trim().length > 0) {
-      return `<img class="book-cover-img" src="${book.cover}" alt="Cover of ${escapeHtml(book.title || "book")}" loading="lazy">`;
-    }
-    return `<div class="book-cover-placeholder" aria-hidden="true"></div>`;
-  }
-
   function escapeHtml(s) {
     return String(s ?? "")
       .replaceAll("&", "&amp;")
@@ -30,6 +21,13 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function coverHtml(book) {
+    if (book.cover && typeof book.cover === "string" && book.cover.trim().length > 0) {
+      return `<img class="book-cover-img" src="${book.cover}" alt="Cover of ${escapeHtml(book.title || "book")}" loading="lazy">`;
+    }
+    return `<div class="book-cover-placeholder" aria-hidden="true"></div>`;
   }
 
   function render(filter) {
@@ -52,9 +50,7 @@
 
       return `
         <article class="book-card">
-          <div class="book-cover">
-            ${coverHtml(b)}
-          </div>
+          <div class="book-cover">${coverHtml(b)}</div>
           <div class="book-meta">
             <div class="book-tags">
               <span class="tag">${category || "Book"}</span>
