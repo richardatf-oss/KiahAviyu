@@ -113,3 +113,15 @@
   </footer>
 </body>
 </html>
+.form-row{ display:flex; flex-direction:column; gap:6px; margin-top:10px; }
+.form-label{ font-size:13px; color:var(--muted); }
+.form-input{
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.02);
+  color:var(--text);
+  outline:none;
+}
+.form-input:focus{ border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.04); }
+.form-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
