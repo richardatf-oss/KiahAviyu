@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KiahAviyu.com — Books by Richard Allen Lee (Kiah Aviyu)</title>
-  <meta name="description" content="Mystical, Kabbalistic, and cosmic books by Kiah Aviyu (Richard Allen Lee). Explore the catalog, featured series, and pathways to LuminaNexus." />
+  <title>KiahAviyu.com — Bookstore</title>
+  <meta name="description" content="Official bookstore for books by Kiah Aviyu (Richard Allen Lee). Explore the catalog, featured titles, and pathways to LuminaNexus." />
   <link rel="stylesheet" href="./style.css" />
   <script defer src="./js/site.js"></script>
 </head>
@@ -16,11 +16,12 @@
         <span class="brand-mark">א</span>
         <span class="brand-text">
           <span class="brand-title">KiahAviyu.com</span>
-          <span class="brand-sub">Books • Light • Letters</span>
+          <span class="brand-sub">Bookstore • Light • Letters</span>
         </span>
       </a>
 
       <nav class="nav">
+        <a class="pill active" href="./index.html">Home</a>
         <a class="pill" href="./books.html">Books</a>
         <a class="pill" href="./about.html">About</a>
         <a class="pill" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
@@ -29,122 +30,182 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1>Books, first.</h1>
+          <h1>Welcome to the Bookstore.</h1>
           <p class="lead">
-            Welcome to my book sanctuary—mystical fiction, sacred letters, cosmic frameworks, and the quiet fire of the Aleph.
+            Five published works so far—mystical, lettered, and luminous.
+            Browse the shelf, choose a doorway, and take what sparks.
           </p>
 
           <div class="cta-row">
-            <a class="btn primary" href="./books.html">Browse the Bookstore</a>
+            <a class="btn primary" href="./books.html">Shop All Books</a>
+            <a class="btn" href="#front-shelf">Front Shelf</a>
             <a class="btn" href="#pathways">Pathways</a>
           </div>
 
           <div class="trust">
-            <span class="chip">Clean, fast reading</span>
-            <span class="chip">Series-first browsing</span>
-            <span class="chip">Amazon + direct links</span>
+            <span class="chip">Real Amazon links</span>
+            <span class="chip">Fast + clean layout</span>
+            <span class="chip">Built to sell books</span>
           </div>
         </div>
 
+        <!-- FEATURED PANEL -->
         <div class="hero-card">
           <div class="hero-card-inner">
             <h2 class="mini-title">Featured</h2>
-            <p class="muted">Set your “front shelf” here. Update anytime.</p>
+            <p class="muted">Your newest title on the top shelf.</p>
 
             <div class="featured">
-              <img class="cover" src="./assets/featured-cover.jpg" alt="Featured book cover" onerror="this.style.display='none'"/>
+              <img class="cover" src="./assets/adam-kadmon.jpg" alt="ADAM KADMON cover" />
               <div class="featured-meta">
-                <div class="kicker">New & Notable</div>
-                <div class="featured-title">ADAM KADMON</div>
+                <div class="kicker">ADAM KADMON</div>
+                <div class="featured-title">A Story in Ten Lights</div>
                 <div class="muted small">Kiah Aviyu</div>
                 <div class="btn-row">
-                  <a class="btn small" href="./books.html#adam-kadmon">Details</a>
-                  <a class="btn small primary" href="https://www.amazon.com/dp/B0GCCFLVZN" target="_blank" rel="noopener">Buy on Amazon</a>
+                  <a class="btn small" href="./books.html#featured">Details</a>
+                  <a class="btn small primary"
+                     href="https://www.amazon.com/ADAM-KADMON-KIAH-AVIYU/dp/196965953X/"
+                     target="_blank" rel="noopener">Buy on Amazon</a>
                 </div>
               </div>
             </div>
 
             <p class="note">
-              Tip: put your newest cover at <code>/assets/featured-cover.jpg</code>.
+              Tip: update the Featured book anytime by swapping the cover and link here.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- FRONT SHELF (5 BOOKS) -->
+    <section id="front-shelf" class="section">
       <div class="wrap">
         <div class="section-head">
-          <h2>Best Starting Points</h2>
-          <p class="muted">Three doors: story, study, and system.</p>
+          <h2>Front Shelf</h2>
+          <p class="muted">All published books—right here, one click to buy.</p>
         </div>
 
-        <div class="cards">
-          <a class="card" href="./books.html#series-the-first-light">
-            <h3>The First Light</h3>
-            <p>Adam & Eve retold with sacred depth—Eve as redemptive light.</p>
-            <span class="arrow">→</span>
-          </a>
+        <div class="grid">
 
-          <a class="card" href="./books.html#series-celestial-library">
-            <h3>Celestial Library of 231 Gates</h3>
-            <p>A lettered cosmos—maps, gates, and the architecture of wonder.</p>
-            <span class="arrow">→</span>
-          </a>
+          <article class="book">
+            <img class="cover" src="./assets/adversarys-prayer.jpg" alt="The Adversary’s Prayer cover" />
+            <div class="book-body">
+              <div class="book-title">The Adversary’s Prayer</div>
+              <div class="muted small">Thanking HaShem Through the Tries</div>
+              <p class="book-blurb">Gratitude under pressure—learning to bless even the narrow places.</p>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="https://www.amazon.com/ADVERSARYS-PRAYER-Thanking-HaShem-Tries/dp/1969659459/"
+                   target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
 
-          <a class="card" href="./books.html#all-books">
-            <h3>Full Catalog</h3>
-            <p>Browse everything, sorted by series and theme.</p>
-            <span class="arrow">→</span>
-          </a>
+          <article class="book">
+            <img class="cover" src="./assets/adam-kadmon.jpg" alt="ADAM KADMON cover" />
+            <div class="book-body">
+              <div class="book-title">ADAM KADMON</div>
+              <div class="muted small">A Story in Ten Lights</div>
+              <p class="book-blurb">Ten lights, one root—an inner journey through luminous architecture.</p>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="https://www.amazon.com/ADAM-KADMON-KIAH-AVIYU/dp/196965953X/"
+                   target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book">
+            <img class="cover" src="./assets/tower-of-daat.jpg" alt="Tower of Da’at cover" />
+            <div class="book-body">
+              <div class="book-title">TOWER OF DA’AT</div>
+              <div class="muted small">Kiah Aviyu (קיה אביו)</div>
+              <p class="book-blurb">A vertical ascent of knowing—letters rising like flame into the heights.</p>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="https://www.amazon.com/TOWER-DAAT-AVIYU-KIAH-%D7%90%D7%91%D7%99%D7%95/dp/1969659114/"
+                   target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book">
+            <img class="cover" src="./assets/quantum-etz-chaim.jpg" alt="Quantum Etz Chaim cover" />
+            <div class="book-body">
+              <div class="book-title">QUANTUM ETZ CHAIM</div>
+              <div class="muted small">Kiah Aviyu</div>
+              <p class="book-blurb">The Tree of Life refracted through modern awe—structure, light, and meaning.</p>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="https://www.amazon.com/QUANTUM-ETZ-CHAIM-KIAH-AVIYU/dp/1969659262/"
+                   target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="book">
+            <img class="cover" src="./assets/tiferet.jpg" alt="Tiferet cover" />
+            <div class="book-body">
+              <div class="book-title">TIFERET</div>
+              <div class="muted small">Kiah Aviyu</div>
+              <p class="book-blurb">Beauty as alignment—where mercy and strength meet in the centerline.</p>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="https://www.amazon.com/TIFERET-Kiah-Aviyu/dp/1969659408/"
+                   target="_blank" rel="noopener">Buy on Amazon</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="footer-shelf" style="margin-top:10px;">
+          <div class="shelf-left">
+            <div class="author">RICHARD ALLEN LEE</div>
+            <div class="muted small">Writing as Kiah Aviyu</div>
+          </div>
+          <div class="shelf-right">
+            <a class="btn small" href="./books.html">Browse Books</a>
+            <a class="btn small" href="./about.html">About</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- PATHWAYS -->
     <section id="pathways" class="section soft">
       <div class="wrap">
         <div class="section-head">
           <h2>Pathways</h2>
-          <p class="muted">If you want to go deeper—here are the gentle doors.</p>
+          <p class="muted">If the books open a door, these are gentle next steps.</p>
         </div>
 
         <div class="cards">
           <a class="card" href="https://luminaNexus.org" target="_blank" rel="noopener">
             <h3>LuminaNexus.org</h3>
-            <p>A wider sanctuary: projects, experiments, and the greater constellation.</p>
+            <p>The wider sanctuary: projects, experiments, and the constellation behind the books.</p>
             <span class="arrow">↗</span>
           </a>
 
           <div class="card">
             <h3>To HaShem</h3>
             <p>
-              If these pages stir your soul: pause, breathe, and offer gratitude.
-              <span class="muted">(No pressure—only invitation.)</span>
+              If your heart is stirred, pause for a breath of gratitude.
+              <span class="muted">(Invitation only.)</span>
             </p>
             <div class="small muted">“Baruch HaShem” • “Modeh/Modah Ani” • “Shema”</div>
           </div>
 
           <a class="card" href="./about.html#contact">
             <h3>Contact</h3>
-            <p>Questions, speaking, collaborations, or reader notes.</p>
+            <p>Reader notes, questions, speaking, collaborations.</p>
             <span class="arrow">→</span>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap footer-shelf">
-        <div class="shelf-left">
-          <div class="author">RICHARD ALLEN LEE</div>
-          <div class="muted small">Writing as Kiah Aviyu</div>
-        </div>
-        <div class="shelf-right">
-          <a class="btn small" href="./books.html">Shop Books</a>
-          <a class="btn small" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
         </div>
       </div>
     </section>
