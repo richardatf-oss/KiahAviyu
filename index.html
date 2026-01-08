@@ -2,75 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kiah Aviyu — Author</title>
-  <meta name="description" content="Kiah Aviyu — books, projects, and the Celestial Library of the 231 Gates." />
-  <link rel="stylesheet" href="/css/styles.css?v=2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KiahAviyu.com — Books by Richard Allen Lee (Kiah Aviyu)</title>
+  <meta name="description" content="Mystical, Kabbalistic, and cosmic books by Kiah Aviyu (Richard Allen Lee). Explore the catalog, featured series, and pathways to LuminaNexus." />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./js/site.js"></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
+<body>
   <header class="site-header">
     <div class="wrap header-row">
-      <div class="brand">
-        <div class="brand-mark">א</div>
-        <div class="brand-text">
-          <div class="brand-title">Kiah Aviyu</div>
-          <div class="brand-subtitle">Author • Mystical Science • Living Library</div>
-        </div>
-      </div>
+      <a class="brand" href="./index.html" aria-label="KiahAviyu.com Home">
+        <span class="brand-mark">א</span>
+        <span class="brand-text">
+          <span class="brand-title">KiahAviyu.com</span>
+          <span class="brand-sub">Books • Light • Letters</span>
+        </span>
+      </a>
 
       <nav class="nav">
-        <a class="nav-link active" href="/index.html">Home</a>
-        <a class="nav-link" href="/books.html">Books</a>
-        <a class="nav-link" href="/series.html">Series</a>
-        <a class="nav-link" href="/about.html">About</a>
-        <a class="nav-link" href="/contact.html">Contact</a>
+        <a class="pill" href="./books.html">Books</a>
+        <a class="pill" href="./about.html">About</a>
+        <a class="pill" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
+  <main>
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="kicker">ברוך השם • Torah First</p>
-          <h1>Welcome to the Gate.</h1>
+          <h1>Books, first.</h1>
           <p class="lead">
-            This is the author home of Kiah Aviyu—where stories, sacred symbols,
-            and the physics of wonder meet. Start with the books, or enter a series.
+            Welcome to my book sanctuary—mystical fiction, sacred letters, cosmic frameworks, and the quiet fire of the Aleph.
           </p>
 
           <div class="cta-row">
-            <a class="btn primary" href="/books.html">Browse all books</a>
-            <a class="btn" href="/series.html">Explore series</a>
+            <a class="btn primary" href="./books.html">Browse the Bookstore</a>
+            <a class="btn" href="#pathways">Pathways</a>
           </div>
 
-          <div class="mini-links">
-            <a href="/about.html">New here? Read the worldview →</a>
+          <div class="trust">
+            <span class="chip">Clean, fast reading</span>
+            <span class="chip">Series-first browsing</span>
+            <span class="chip">Amazon + direct links</span>
           </div>
         </div>
 
         <div class="hero-card">
-          <div class="card">
-            <div class="card-label">Featured</div>
-            <h2 class="card-title">The Celestial Library of the 231 Gates</h2>
-            <p class="card-text">
-              A unified body of work—books, gates, trees, and reflections—arranged
-              like a living map.
-            </p>
-            <div class="card-actions">
-              <a class="btn small primary" href="/series.html#celestial-library">Enter the Library</a>
-              <a class="btn small" href="/books.html">See titles</a>
-            </div>
-          </div>
+          <div class="hero-card-inner">
+            <h2 class="mini-title">Featured</h2>
+            <p class="muted">Set your “front shelf” here. Update anytime.</p>
 
-          <div class="card subtle">
-            <div class="card-label">Coming soon</div>
-            <h3 class="card-title">Project Worlds</h3>
-            <p class="card-text">
-              QuantumEtzChaim.com and other Trees will live as separate worlds.
-              This site stays the calm “author gate.”
+            <div class="featured">
+              <img class="cover" src="./assets/featured-cover.jpg" alt="Featured book cover" onerror="this.style.display='none'"/>
+              <div class="featured-meta">
+                <div class="kicker">New & Notable</div>
+                <div class="featured-title">ADAM KADMON</div>
+                <div class="muted small">Kiah Aviyu</div>
+                <div class="btn-row">
+                  <a class="btn small" href="./books.html#adam-kadmon">Details</a>
+                  <a class="btn small primary" href="https://www.amazon.com/dp/B0GCCFLVZN" target="_blank" rel="noopener">Buy on Amazon</a>
+                </div>
+              </div>
+            </div>
+
+            <p class="note">
+              Tip: put your newest cover at <code>/assets/featured-cover.jpg</code>.
             </p>
           </div>
         </div>
@@ -80,42 +78,73 @@
     <section class="section">
       <div class="wrap">
         <div class="section-head">
-          <h2>Start Here</h2>
-          <p>Three simple paths depending on what you’re hungry for.</p>
+          <h2>Best Starting Points</h2>
+          <p class="muted">Three doors: story, study, and system.</p>
         </div>
 
-        <div class="grid-3">
-          <article class="tile">
-            <h3>Fiction & Myth</h3>
-            <p>Epic, symbolic novels rooted in sacred patterns and human longing.</p>
-            <a class="text-link" href="/books.html#fiction">Go to Fiction →</a>
-          </article>
+        <div class="cards">
+          <a class="card" href="./books.html#series-the-first-light">
+            <h3>The First Light</h3>
+            <p>Adam & Eve retold with sacred depth—Eve as redemptive light.</p>
+            <span class="arrow">→</span>
+          </a>
 
-          <article class="tile">
-            <h3>Mystical Nonfiction</h3>
-            <p>Where Kabbalah and “how reality behaves” start talking to each other.</p>
-            <a class="text-link" href="/books.html#nonfiction">Go to Nonfiction →</a>
-          </article>
+          <a class="card" href="./books.html#series-celestial-library">
+            <h3>Celestial Library of 231 Gates</h3>
+            <p>A lettered cosmos—maps, gates, and the architecture of wonder.</p>
+            <span class="arrow">→</span>
+          </a>
 
-          <article class="tile">
-            <h3>Series & Gates</h3>
-            <p>Structured journeys—letters, trees, and a library you can navigate.</p>
-            <a class="text-link" href="/series.html">Go to Series →</a>
-          </article>
+          <a class="card" href="./books.html#all-books">
+            <h3>Full Catalog</h3>
+            <p>Browse everything, sorted by series and theme.</p>
+            <span class="arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section id="pathways" class="section soft">
       <div class="wrap">
         <div class="section-head">
-          <h2>Updates</h2>
-          <p>Short notes, release updates, and what’s being written next.</p>
+          <h2>Pathways</h2>
+          <p class="muted">If you want to go deeper—here are the gentle doors.</p>
         </div>
 
-        <div class="announce">
-          <p><strong>Latest:</strong> Site is live. Next: full catalog + series hubs.</p>
-          <p class="muted">Tip: You can paste announcements here as you publish.</p>
+        <div class="cards">
+          <a class="card" href="https://luminaNexus.org" target="_blank" rel="noopener">
+            <h3>LuminaNexus.org</h3>
+            <p>A wider sanctuary: projects, experiments, and the greater constellation.</p>
+            <span class="arrow">↗</span>
+          </a>
+
+          <div class="card">
+            <h3>To HaShem</h3>
+            <p>
+              If these pages stir your soul: pause, breathe, and offer gratitude.
+              <span class="muted">(No pressure—only invitation.)</span>
+            </p>
+            <div class="small muted">“Baruch HaShem” • “Modeh/Modah Ani” • “Shema”</div>
+          </div>
+
+          <a class="card" href="./about.html#contact">
+            <h3>Contact</h3>
+            <p>Questions, speaking, collaborations, or reader notes.</p>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap footer-shelf">
+        <div class="shelf-left">
+          <div class="author">RICHARD ALLEN LEE</div>
+          <div class="muted small">Writing as Kiah Aviyu</div>
+        </div>
+        <div class="shelf-right">
+          <a class="btn small" href="./books.html">Shop Books</a>
+          <a class="btn small" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
         </div>
       </div>
     </section>
@@ -124,20 +153,21 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <div class="footer-title">Kiah Aviyu</div>
-        <p class="muted">Books • Gates • Trees • Light</p>
+        <div class="footer-title">KiahAviyu.com</div>
+        <p class="muted small">A bookstore for sacred imagination.</p>
       </div>
+
       <div class="footer-links">
-        <a href="/books.html">Books</a>
-        <a href="/series.html">Series</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./books.html">Books</a>
+        <a href="./about.html">About</a>
+        <a href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
       </div>
-      <div class="footer-small muted">
-        <span id="year"></span> • Built with care.
+
+      <div class="footer-mark">
+        <div class="tree">עץ חיים</div>
+        <div class="muted small">LuminaNexus.org</div>
       </div>
     </div>
-    <script src="/js/site.js?v=2"></script>
   </footer>
 </body>
 </html>
