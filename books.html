@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Books — KiahAviyu.com</title>
+  <meta name="description" content="Browse books by Kiah Aviyu (Richard Allen Lee). Series, catalog, and buy links." />
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./js/site.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">א</span>
+        <span class="brand-text">
+          <span class="brand-title">KiahAviyu.com</span>
+          <span class="brand-sub">Bookstore</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a class="pill active" href="./books.html">Books</a>
+        <a class="pill" href="./about.html">About</a>
+        <a class="pill" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Books</h1>
+        <p class="muted">Browse by series or view the full catalog.</p>
+      </div>
+
+      <div class="filter-row">
+        <input id="bookSearch" class="search" type="search" placeholder="Search titles / keywords..." autocomplete="off" />
+        <div class="muted small">Tip: type “Aleph”, “Eve”, “231”, “Quantum”...</div>
+      </div>
+
+      <h2 id="series-the-first-light">Series: The First Light</h2>
+      <div class="grid" data-section="books">
+        <article class="book" data-title="The First Light" data-tags="adam eve eden kabbalah zohar">
+          <img class="cover" src="./assets/the-first-light.jpg" alt="The First Light cover" onerror="this.style.display='none'"/>
+          <div class="book-body">
+            <div class="book-title">The First Light</div>
+            <div class="muted small">Mystical retelling • Adam & Eve</div>
+            <p class="book-blurb">A luminous re-visioning of origins: memory, mercy, and the quiet work of redemption.</p>
+            <div class="btn-row">
+              <a class="btn small" href="./about.html#reading-order">Reading Order</a>
+              <a class="btn small primary" href="#" data-buy="amazon">Buy</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h2 id="series-celestial-library">Series: Celestial Library of 231 Gates</h2>
+      <div class="grid" data-section="books">
+        <article class="book" data-title="The Celestial Library of the 231 Gates" data-tags="231 gates letters hebrew">
+          <img class="cover" src="./assets/celestial-library.jpg" alt="Celestial Library cover" onerror="this.style.display='none'"/>
+          <div class="book-body">
+            <div class="book-title">The Celestial Library of the 231 Gates</div>
+            <div class="muted small">Letters • gates • cosmic architecture</div>
+            <p class="book-blurb">A map of luminous combinations—where letters become doors and doors become worlds.</p>
+            <div class="btn-row">
+              <a class="btn small" href="https://luminaNexus.org" target="_blank" rel="noopener">Explore Projects</a>
+              <a class="btn small primary" href="#" data-buy="amazon">Buy</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h2 id="all-books">All Books</h2>
+      <p class="muted">Add every title here. Keep covers in <code>/assets/</code>.</p>
+
+      <div class="grid" data-section="books">
+        <article id="adam-kadmon" class="book" data-title="ADAM KADMON" data-tags="adam kadmon kabbalah genesis">
+          <img class="cover" src="./assets/adam-kadmon.jpg" alt="ADAM KADMON cover" onerror="this.style.display='none'"/>
+          <div class="book-body">
+            <div class="book-title">ADAM KADMON</div>
+            <div class="muted small">Kiah Aviyu</div>
+            <p class="book-blurb">The primordial human as blueprint—where light condenses into meaning and form.</p>
+            <div class="btn-row">
+              <a class="btn small" href="https://www.amazon.com/dp/B0GCCFLVZN" target="_blank" rel="noopener">Amazon</a>
+              <a class="btn small" href="#" data-buy="sample">Sample</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Copy/paste this book card block to add more titles -->
+        <article class="book" data-title="Quantum Mechanics and Kabbalah" data-tags="quantum sefirot physics">
+          <img class="cover" src="./assets/quantum-kabbalah.jpg" alt="Quantum Mechanics and Kabbalah cover" onerror="this.style.display='none'"/>
+          <div class="book-body">
+            <div class="book-title">Quantum Mechanics and Kabbalah</div>
+            <div class="muted small">Non-fiction • sefirot ↔ quantum concepts</div>
+            <p class="book-blurb">A structured exploration mapping the Tree of Life to modern quantum ideas.</p>
+            <div class="btn-row">
+              <a class="btn small" href="#" data-buy="amazon">Buy</a>
+              <a class="btn small" href="./about.html#contact">Ask a Question</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-title">RICHARD ALLEN LEE</div>
+        <p class="muted small">Writing as Kiah Aviyu</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
+      </div>
+      <div class="footer-mark">
+        <div class="tree">עץ חיים</div>
+        <div class="muted small">LuminaNexus.org</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
