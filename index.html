@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KiahAviyu.com — Bookstore</title>
-  <meta name="description" content="Official bookstore for books by Kiah Aviyu (Richard Allen Lee). Explore the catalog, featured titles, and pathways to LuminaNexus." />
+  <meta name="description" content="Official bookstore for books by Kiah Aviyu (Richard Allen Lee). Explore published books, unpublished manuscripts, excerpts, and pathways to LuminaNexus." />
   <link rel="stylesheet" href="./style.css" />
   <script defer src="./js/site.js"></script>
 </head>
@@ -22,8 +22,9 @@
 
       <nav class="nav">
         <a class="pill active" href="./index.html">Home</a>
-        <a class="pill" href="./books.html">Books</a>
-        <a class="pill" href="./about.html">About</a>
+        <a class="pill" href="#front-shelf">Published</a>
+        <a class="pill" href="#unpublished">Unpublished</a>
+        <a class="pill" href="#pathways">Pathways</a>
         <a class="pill" href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
       </nav>
     </div>
@@ -36,19 +37,19 @@
         <div class="hero-copy">
           <h1>Welcome to the Bookstore.</h1>
           <p class="lead">
-            Five published works so far—mystical, lettered, and luminous.
+            Published books, living manuscripts, and luminous works in progress.
             Browse the shelf, choose a doorway, and take what sparks.
           </p>
 
           <div class="cta-row">
-            <a class="btn primary" href="./books.html">Shop All Books</a>
-            <a class="btn" href="#front-shelf">Front Shelf</a>
+            <a class="btn primary" href="#front-shelf">Published Books</a>
+            <a class="btn" href="#unpublished">Unpublished Works</a>
             <a class="btn" href="#pathways">Pathways</a>
           </div>
 
           <div class="trust">
             <span class="chip">Real Amazon links</span>
-            <span class="chip">Fast + clean layout</span>
+            <span class="chip">Publisher review PDFs</span>
             <span class="chip">Built to sell books</span>
           </div>
         </div>
@@ -57,7 +58,7 @@
         <div class="hero-card">
           <div class="hero-card-inner">
             <h2 class="mini-title">Featured</h2>
-            <p class="muted">Your newest title on the top shelf.</p>
+            <p class="muted">Your newest published title on the top shelf.</p>
 
             <div class="featured">
               <img class="cover" src="./assets/adam-kadmon.jpg" alt="ADAM KADMON cover" />
@@ -66,7 +67,6 @@
                 <div class="featured-title">A Story in Ten Lights</div>
                 <div class="muted small">Kiah Aviyu</div>
                 <div class="btn-row">
-                  <a class="btn small" href="./books.html#featured">Details</a>
                   <a class="btn small primary"
                      href="https://www.amazon.com/ADAM-KADMON-KIAH-AVIYU/dp/196965953X/"
                      target="_blank" rel="noopener">Buy on Amazon</a>
@@ -75,29 +75,28 @@
             </div>
 
             <p class="note">
-              Tip: update the Featured book anytime by swapping the cover and link here.
+              Publishers may review unpublished manuscripts below.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FRONT SHELF (5 BOOKS) -->
+    <!-- FRONT SHELF -->
     <section id="front-shelf" class="section">
       <div class="wrap">
         <div class="section-head">
-          <h2>Front Shelf</h2>
-          <p class="muted">All published books—right here, one click to buy.</p>
+          <h2>Published Books</h2>
+          <p class="muted">Five published works — right here, one click to buy.</p>
         </div>
 
         <div class="grid">
-
           <article class="book">
             <img class="cover" src="./assets/adversarys-prayer.jpg" alt="The Adversary’s Prayer cover" />
             <div class="book-body">
               <div class="book-title">The Adversary’s Prayer</div>
               <div class="muted small">Thanking HaShem Through the Tries</div>
-              <p class="book-blurb">Gratitude under pressure—learning to bless even the narrow places.</p>
+              <p class="book-blurb">Gratitude under pressure — learning to bless even the narrow places.</p>
               <div class="btn-row">
                 <a class="btn small primary"
                    href="https://www.amazon.com/ADVERSARYS-PRAYER-Thanking-HaShem-Tries/dp/1969659459/"
@@ -111,7 +110,7 @@
             <div class="book-body">
               <div class="book-title">ADAM KADMON</div>
               <div class="muted small">A Story in Ten Lights</div>
-              <p class="book-blurb">Ten lights, one root—an inner journey through luminous architecture.</p>
+              <p class="book-blurb">Ten lights, one root — an inner journey through luminous architecture.</p>
               <div class="btn-row">
                 <a class="btn small primary"
                    href="https://www.amazon.com/ADAM-KADMON-KIAH-AVIYU/dp/196965953X/"
@@ -124,8 +123,8 @@
             <img class="cover" src="./assets/tower-of-daat.jpg" alt="Tower of Da’at cover" />
             <div class="book-body">
               <div class="book-title">TOWER OF DA’AT</div>
-              <div class="muted small">Kiah Aviyu (קיה אביו)</div>
-              <p class="book-blurb">A vertical ascent of knowing—letters rising like flame into the heights.</p>
+              <div class="muted small">Kiah Aviyu / קיה אביו</div>
+              <p class="book-blurb">A vertical ascent of knowing — letters rising like flame into the heights.</p>
               <div class="btn-row">
                 <a class="btn small primary"
                    href="https://www.amazon.com/TOWER-DAAT-AVIYU-KIAH-%D7%90%D7%91%D7%99%D7%95/dp/1969659114/"
@@ -139,7 +138,7 @@
             <div class="book-body">
               <div class="book-title">QUANTUM ETZ CHAIM</div>
               <div class="muted small">Kiah Aviyu</div>
-              <p class="book-blurb">The Tree of Life refracted through modern awe—structure, light, and meaning.</p>
+              <p class="book-blurb">The Tree of Life refracted through modern awe — structure, light, and meaning.</p>
               <div class="btn-row">
                 <a class="btn small primary"
                    href="https://www.amazon.com/QUANTUM-ETZ-CHAIM-KIAH-AVIYU/dp/1969659262/"
@@ -153,7 +152,7 @@
             <div class="book-body">
               <div class="book-title">TIFERET</div>
               <div class="muted small">Kiah Aviyu</div>
-              <p class="book-blurb">Beauty as alignment—where mercy and strength meet in the centerline.</p>
+              <p class="book-blurb">Beauty as alignment — where mercy and strength meet in the centerline.</p>
               <div class="btn-row">
                 <a class="btn small primary"
                    href="https://www.amazon.com/TIFERET-Kiah-Aviyu/dp/1969659408/"
@@ -161,7 +160,6 @@
               </div>
             </div>
           </article>
-
         </div>
 
         <div class="footer-shelf" style="margin-top:10px;">
@@ -170,71 +168,65 @@
             <div class="muted small">Writing as Kiah Aviyu</div>
           </div>
           <div class="shelf-right">
-            <a class="btn small" href="./books.html">Browse Books</a>
-            <a class="btn small" href="./about.html">About</a>
+            <a class="btn small" href="#unpublished">Publisher Review</a>
+            <a class="btn small" href="#pathways">Pathways</a>
           </div>
         </div>
       </div>
     </section>
-<article class="book unpublished">
-  <div class="cover placeholder-cover">
-    <span>Do You<br>Hear<br>Voices?</span>
-  </div>
 
-  <div class="book-body">
-    <div class="book-title">DO YOU HEAR VOICES?</div>
-    <div class="muted small">Unpublished Novel • Available for Publisher Review</div>
+    <!-- UNPUBLISHED WORKS -->
+    <section id="unpublished" class="section soft">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Unpublished Works</h2>
+          <p class="muted">Full manuscripts and excerpts available for publisher review.</p>
+        </div>
 
-    <p class="book-blurb">
-      A metaphysical literary novel about perception, identity, consciousness,
-      and the voice within us that “did not agree to forget.”
-    </p>
-<article class="book unpublished">
-  <div class="cover placeholder-cover">
-    <span>Do You<br>Hear<br>Voices?</span>
-  </div>
+        <div class="grid">
+          <article class="book unpublished">
+            <div class="cover placeholder-cover">
+              <span>Do You<br>Hear<br>Voices?</span>
+            </div>
 
-  <div class="book-body">
-    <div class="book-title">DO YOU HEAR VOICES?</div>
-    <div class="muted small">Unpublished Novel • Publisher Review Excerpt</div>
+            <div class="book-body">
+              <div class="book-title">DO YOU HEAR VOICES?</div>
+              <div class="muted small">Unpublished Novel • Full Manuscript + Publisher Excerpt</div>
 
-    <p class="book-blurb">
-      A metaphysical literary novel about perception, consciousness,
-      separation, and the voice within us that did not agree to forget.
-    </p>
+              <p class="book-blurb">
+                A metaphysical literary novel about perception, identity, consciousness,
+                separation, and the voice within us that did not agree to forget.
+              </p>
 
-    <div class="btn-row">
-      <a class="btn small primary"
-         href="./assets/do-you-hear-voices-excerpt.pdf"
-         target="_blank"
-         rel="noopener">
-        Read Excerpt
-      </a>
+              <div class="btn-row">
+                <a class="btn small primary"
+                   href="./assets/do-you-hear-voices-full.pdf"
+                   target="_blank"
+                   rel="noopener">
+                  Full Manuscript
+                </a>
 
-      <a class="btn small"
-         href="./about.html#contact">
-        Publisher Inquiry
-      </a>
-    </div>
-  </div>
-</article>
-    <div class="btn-row">
-      <a class="btn small primary"
-         href="./assets/do-you-hear-voices.pdf"
-         target="_blank"
-         rel="noopener">
-        Read Manuscript
-      </a>
+                <a class="btn small"
+                   href="./assets/do-you-hear-voices-excerpt.pdf"
+                   target="_blank"
+                   rel="noopener">
+                  Publisher Excerpt
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-      <a class="btn small"
-         href="./about.html#contact">
-        Publisher Inquiry
-      </a>
-    </div>
-  </div>
-</article>
+        <p class="note">
+          PDF files should be saved as:
+          <code>/assets/do-you-hear-voices-full.pdf</code> and
+          <code>/assets/do-you-hear-voices-excerpt.pdf</code>.
+        </p>
+      </div>
+    </section>
+
     <!-- PATHWAYS -->
-    <section id="pathways" class="section soft">
+    <section id="pathways" class="section">
       <div class="wrap">
         <div class="section-head">
           <h2>Pathways</h2>
@@ -257,9 +249,9 @@
             <div class="small muted">“Baruch HaShem” • “Modeh/Modah Ani” • “Shema”</div>
           </div>
 
-          <a class="card" href="./about.html#contact">
+          <a class="card" href="mailto:">
             <h3>Contact</h3>
-            <p>Reader notes, questions, speaking, collaborations.</p>
+            <p>Reader notes, publisher inquiries, questions, speaking, collaborations.</p>
             <span class="arrow">→</span>
           </a>
         </div>
@@ -275,8 +267,8 @@
       </div>
 
       <div class="footer-links">
-        <a href="./books.html">Books</a>
-        <a href="./about.html">About</a>
+        <a href="#front-shelf">Published</a>
+        <a href="#unpublished">Unpublished</a>
         <a href="https://luminaNexus.org" target="_blank" rel="noopener">LuminaNexus</a>
       </div>
 
