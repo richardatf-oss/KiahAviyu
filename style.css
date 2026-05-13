@@ -219,3 +219,24 @@ code{color:var(--brand)}
 .footer-mark{text-align:right}
 @media (max-width: 900px){.footer-mark{text-align:left}}
 .tree{font-weight:900;color:var(--brand)}
+.book.unpublished {
+  border-color: rgba(230,208,122,.38);
+}
+
+.placeholder-cover {
+  width:92px;
+  height:138px;
+  border-radius:14px;
+  border:1px solid rgba(230,208,122,.45);
+  background:
+    radial-gradient(circle at 50% 20%, rgba(230,208,122,.26), transparent 38%),
+    linear-gradient(145deg, rgba(16,19,26,.95), rgba(11,12,16,.95));
+  display:grid;
+  place-items:center;
+  text-align:center;
+  color:var(--brand);
+  font-weight:900;
+  font-size:13px;
+  line-height:1.25;
+  letter-spacing:.3px;
+}
